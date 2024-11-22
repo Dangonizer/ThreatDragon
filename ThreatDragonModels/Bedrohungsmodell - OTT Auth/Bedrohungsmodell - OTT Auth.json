@@ -45,6 +45,31 @@
           },
           {
             "position": {
+              "x": 654,
+              "y": -562
+            },
+            "size": {
+              "width": 210,
+              "height": 180
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Security Provider"
+              }
+            },
+            "id": "82da4397-8309-4c45-ac2c-c30c5fea6631",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Security Provider",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": -208,
               "y": 19.999999999999837
             },
@@ -617,8 +642,8 @@
                 "y": 122.99999999999983
               },
               {
-                "x": 418,
-                "y": -79.00000000000017
+                "x": 480,
+                "y": -70
               },
               {
                 "x": 540,
@@ -1238,6 +1263,132 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Signing Code",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "09b08e34-9ba2-48be-afe5-1ed471544e60",
+            "source": {
+              "cell": "38327f5f-a9ec-4548-bd69-767c27c1bfcd"
+            },
+            "target": {
+              "cell": "fff3c37f-32a6-4041-8451-34771ab6369c"
+            },
+            "labels": [
+              "Signing Code"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Encryption +Signing Code",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "df131306-976d-4576-94ab-168cc71e1910",
+            "source": {
+              "cell": "38327f5f-a9ec-4548-bd69-767c27c1bfcd"
+            },
+            "target": {
+              "cell": "532e7dd8-ccb2-415b-b9c7-943b4e0ace6d"
+            },
+            "labels": [
+              "Encryption +Signing Code"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Encryption Code",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "cfec9e8b-97fb-438b-9319-f92b3c2b8bf7",
+            "source": {
+              "cell": "38327f5f-a9ec-4548-bd69-767c27c1bfcd"
+            },
+            "target": {
+              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
+            },
+            "labels": [
+              "Encryption Code"
+            ]
+          },
+          {
             "position": {
               "x": 268,
               "y": -225.0000000000001
@@ -1505,6 +1656,47 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 699,
+              "y": -502
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Encryption Libs"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "38327f5f-a9ec-4548-bd69-767c27c1bfcd",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Store",
+              "name": "Encryption Libs",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
               "threats": []
             }
           }
