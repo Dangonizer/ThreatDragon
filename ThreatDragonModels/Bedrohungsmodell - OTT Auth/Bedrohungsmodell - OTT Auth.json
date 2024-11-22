@@ -67,8 +67,8 @@
                 "text": "Login System -\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -100,7 +100,7 @@
                 {
                   "id": "97194b9f-c0d1-4991-af32-606300ec9ef4",
                   "title": "Spoofing of Login Credentials",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "An attacker can use stolen credentials to impersonate a legitimate user\nAttack Vector: \"Phishing or credential stuffing.\"\n\nCAPEC ID: 600 : - An adversary tries known username/password combinations against different systems, applications, or services to gain additional authenticated access.\n\nID: TA0006: The adversary is trying to steal account names and passwords. Using legitimate credentials can give adversaries access to systems, make them harder to detect, and provide the opportunity to create more accounts to help achieve their goals.\n\nD: 9 / R: 7 / E: 8 / A: 9 / DREA: 33",
@@ -111,7 +111,7 @@
                   "score": "24"
                 }
               ],
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isWebApplication": null,
               "handlesCardPayment": null,
               "handlesGoodsOrServices": null
@@ -120,7 +120,7 @@
           {
             "position": {
               "x": 488,
-              "y": -11.999999999999922
+              "y": -16.999999999999915
             },
             "size": {
               "width": 130,
@@ -152,14 +152,14 @@
                   "id": "a9fe68aa-dd47-40fb-8623-f8744a542fde",
                   "title": "Unprotected Key",
                   "status": "Mitigated",
-                  "severity": "Low",
+                  "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Statischer key liegt unencrypted on disk. wer zugriff auf den speicher erhalt kann otp erhalten\nCAPEC 560: Use of Known Domain Credentials\nAn adversary guesses or obtains (i.e. steals or purchases) legitimate credentials (e.g. userID/password) to achieve authentication and to perform authorized actions under the guise of an authenticated user or service. \nT1552 Unsecured Credentials\nD: 9 R: 6 E: 4 A: 8 Total: 7",
-                  "mitigation": "Rotation of key instead of using static keys.\nMITRE D3-CRO\n\nD: 9 R: 2 E: 2 A: 8 Total 5",
+                  "description": "Statischer key liegt unencrypted on disk. wer zugriff auf den speicher erhalt kann otp erhalten\nCAPEC 560: Use of Known Domain Credentials\nAn adversary guesses or obtains (i.e. steals or purchases) legitimate credentials (e.g. userID/password) to achieve authentication and to perform authorized actions under the guise of an authenticated user or service. \nT1552 Unsecured Credentials\nD: 9 R: 6 E: 4 A: 8 Total: 27",
+                  "mitigation": "Rotation of key instead of using static keys.\nMITRE D3-CRO\n\nD: 7 R: 2 E: 2 A: 8 Total 19",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 109,
-                  "score": ""
+                  "score": "19"
                 }
               ],
               "hasOpenThreats": false,
@@ -1581,6 +1581,45 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "a9e7c3b1-5ea4-41c4-bd24-5e5d265a5dc1",
+            "source": {
+              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
+            },
+            "target": {
+              "cell": "c2716661-ef88-48a8-8d0f-724e1923d562"
+            }
+          },
+          {
             "position": {
               "x": 571,
               "y": -227
@@ -1594,11 +1633,13 @@
                 "text": "Log-DB"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1616,12 +1657,12 @@
               "storesCredentials": false,
               "isEncrypted": true,
               "isSigned": true,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "62a07766-1799-4ace-b08d-78b0641d4803",
                   "title": "Tampering with Logs in Log-DB",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "An attacker could modify or inject log entries to hide malicious activities or create false records.\n\nCAPEC-93: Log Injection-Tampering-Forging: This attack targets the log files of the target host. The attacker injects, manipulates or forges malicious log entries in the log file, allowing them to mislead a log audit, cover traces of attack, or perform other malicious actions.\n\nATT&CK Tactic: Defense Evasion (TA0005): The adversary is trying to avoid being detected.\nDefense Evasion consists of techniques that adversaries use to avoid detection throughout their compromise.\n\nD: 8 / R: 6 / E: 7 / A: 8 / DREA: 29",
@@ -1634,7 +1675,7 @@
                 {
                   "id": "dea3c325-e371-4f36-8cde-1387bb408e90",
                   "title": "Exposure of Sensitive Log Data",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "An attacker could gain unauthorized access to sensitive log data stored in the Log-DB, such as OTTs and login events\nAttack Vector: \"Exploitation of weak access controls, unencrypted storage, or misconfigured permissions.\"\n\nCAPEC ID: CAPEC-180 - Exploiting Incorrectly Configured Access Control Security Levels\nAn attacker exploits a weakness in the configuration of access controls and is able to bypass the intended protection that these measures guard against and thereby obtain unauthorized access to the system or network.\n\nATT&CK Tactic: TA0009: - The adversary is trying to gather data of interest to their goal. Collection consists of techniques adversaries may use to gather information and the sources information is collected from that are relevant to following through on the adversary's objectives. \n\nD: 9 / R: 7 / E: 6 / A: 8 / DREA: 30",
@@ -1745,8 +1786,8 @@
                 "text": "Allsecure Mobile \nPhone OTT Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1760,7 +1801,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1769,7 +1810,7 @@
                 {
                   "id": "5e20d91b-fa4a-4e12-9d0a-4f1e22305459",
                   "title": "DoS Attack on OTT Service",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "An attacker could overwhelm the OTT service with malicious requests, causing it to become unresponsive to legitimate users\nAttack Vector: \"Using a botnet to flood the service with requests or exploiting weak rate-limiting mechanisms.\"\n\nCAPEC-125: Flooding : - An adversary consumes the resources of a target by rapidly engaging in a large number of interactions with the target.\n\nATT&CK Tactic: Impact (TA0040): The adversary is trying to manipulate, interrupt, or destroy your systems and data.\n\nImpact consists of techniques that adversaries use to disrupt availability or compromise integrity by manipulating business and operational processes. Techniques used for impact can include destroying or tampering with data.\n\nD: 8 / R: 9 / E: 8 / A: 9 / DREA: 34",
@@ -1833,8 +1874,8 @@
                 "text": "Monthly \nReport \nExport"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1848,7 +1889,7 @@
               "description": " represent the process of generating and signing the report.\nThe report is signed.\nThe report is protected before being sent.",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1857,7 +1898,7 @@
                 {
                   "id": "c9fc52ba-9556-4cce-9d9e-d1090edac10b",
                   "title": "Repudiation of Report Receipt.",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Low",
                   "type": "Repudiation",
                   "description": " the system does not record or verify whether the management has actually received, opened, or reviewed (acknowledged) the exported report.\nAttack Vector: \"Lack of logging or proof of receipt allows management to deny their involvement.\"\n\nCAPEC ID: \n\nATT&CK Tactic: Collection (TA0009): The adversary is trying to gather data of interest to their goal.\nCollection consists of techniques adversaries may use to gather information and the sources information is collected from that are relevant to following through on the adversary's objectives. Frequently, the next goal after collecting data is to either steal (exfiltrate) the data or to use the data to gain more information about the target environment.\n\nD: 7 / R: 6 / E: 6 / A: 5 / DREA: 24",
@@ -1884,8 +1925,8 @@
                 "text": "SIEM \nSystem"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1899,7 +1940,7 @@
               "description": "Monitors the 2FA service and OTT service, generates weekly signed and encrypted reports for management.\"",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1908,7 +1949,7 @@
                 {
                   "id": "ee78da3f-239d-4a89-a2a4-d0ca95537f03",
                   "title": "Privilege Escalation on SIEM System",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "An attacker could exploit vulnerabilities or use stolen credentials to gain administrative control of the SIEM system\nAttack Vector: \"Brute force, phishing, or exploiting software vulnerabilities to escalate privileges.\"\n\nCAPEC-233: Privilege Escalation: An adversary exploits a weakness enabling them to elevate their privilege and perform an action that they are not supposed to be authorized to perform.\n\nATT&CK Tactic: Privilege Escalation (TA0004): The adversary is trying to gain higher-level permissions.\nPrivilege Escalation consists of techniques that adversaries use to gain higher-level permissions on a system or network.\nD: 10 / R: 6 / E: 7 / A: 9 / DREA: 32",
