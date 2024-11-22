@@ -45,33 +45,8 @@
           },
           {
             "position": {
-              "x": 654,
-              "y": -562
-            },
-            "size": {
-              "width": 210,
-              "height": 180
-            },
-            "shape": "trust-boundary-box",
-            "attrs": {
-              "headerText": {
-                "text": "Security Provider"
-              }
-            },
-            "id": "82da4397-8309-4c45-ac2c-c30c5fea6631",
-            "zIndex": -1,
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "Security Provider",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": -208,
-              "y": 19.999999999999837
+              "x": -261,
+              "y": 57.99999999999998
             },
             "size": {
               "width": 160,
@@ -105,8 +80,8 @@
           },
           {
             "position": {
-              "x": 60,
-              "y": -40.000000000000085
+              "x": 7,
+              "y": -1.9999999999999432
             },
             "size": {
               "width": 130,
@@ -154,8 +129,8 @@
           },
           {
             "position": {
-              "x": 268,
-              "y": -45.000000000000085
+              "x": 215,
+              "y": -6.999999999999943
             },
             "size": {
               "width": 130,
@@ -381,8 +356,8 @@
             },
             "vertices": [
               {
-                "x": 17,
-                "y": 5.999999999999837
+                "x": -36,
+                "y": 43.99999999999998
               }
             ]
           },
@@ -437,8 +412,8 @@
             },
             "vertices": [
               {
-                "x": 220,
-                "y": -43.00000000000016
+                "x": 167,
+                "y": -5.000000000000028
               }
             ]
           },
@@ -639,41 +614,41 @@
               }
             ],
             "source": {
-              "x": 21,
-              "y": 101.99999999999983
+              "x": -32,
+              "y": 139.99999999999997
             },
             "target": {
-              "x": 26,
-              "y": 104.99999999999983
+              "x": -27,
+              "y": 142.99999999999997
             },
             "vertices": [
               {
-                "x": 260,
-                "y": 286.9999999999999
+                "x": 207,
+                "y": 325.00000000000006
               },
               {
-                "x": 403,
-                "y": 122.99999999999983
+                "x": 350,
+                "y": 160.99999999999997
               },
               {
-                "x": 480,
-                "y": -70
+                "x": 427,
+                "y": -31.999999999999858
               },
               {
-                "x": 540,
-                "y": -343.0000000000001
+                "x": 487,
+                "y": -304.99999999999994
               },
               {
-                "x": 30,
-                "y": -393.0000000000001
+                "x": -23,
+                "y": -354.99999999999994
               },
               {
-                "x": -10,
-                "y": -203.00000000000017
+                "x": -63,
+                "y": -165.00000000000003
               },
               {
-                "x": 23,
-                "y": -41.00000000000016
+                "x": -30,
+                "y": -3.0000000000000284
               }
             ]
           },
@@ -842,8 +817,8 @@
             },
             "vertices": [
               {
-                "x": 339.5,
-                "y": -93.00000000000017
+                "x": 286.5,
+                "y": -90
               }
             ]
           },
@@ -1136,8 +1111,8 @@
             },
             "vertices": [
               {
-                "x": -260,
-                "y": 86.99999999999983
+                "x": -313,
+                "y": 124.99999999999997
               }
             ]
           },
@@ -1184,8 +1159,8 @@
             },
             "vertices": [
               {
-                "x": 180,
-                "y": -192.00000000000017
+                "x": 127,
+                "y": -154.00000000000003
               }
             ]
           },
@@ -1229,8 +1204,8 @@
             },
             "vertices": [
               {
-                "x": 128,
-                "y": -263.0000000000002
+                "x": 75,
+                "y": -225.00000000000006
               }
             ]
           },
@@ -1277,45 +1252,32 @@
             }
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
+            "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Flow",
-              "name": "Signing Code",
+              "type": "tm.Boundary",
+              "name": "",
               "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
             },
-            "id": "09b08e34-9ba2-48be-afe5-1ed471544e60",
+            "id": "3e4e8880-26ea-4b00-9b3d-c1cf42428694",
             "source": {
-              "cell": "38327f5f-a9ec-4548-bd69-767c27c1bfcd"
+              "x": 490,
+              "y": -620
             },
             "target": {
-              "cell": "fff3c37f-32a6-4041-8451-34771ab6369c"
+              "x": 20,
+              "y": -640
             },
-            "labels": [
-              "Signing Code"
+            "vertices": [
+              {
+                "x": 230,
+                "y": -450
+              }
             ]
           },
           {
@@ -1338,7 +1300,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Encryption +Signing Code",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1349,16 +1311,13 @@
               "protocol": "",
               "threats": []
             },
-            "id": "df131306-976d-4576-94ab-168cc71e1910",
+            "id": "c8d7e2a1-8ccf-402e-8f8a-bd4b9bc8eb03",
             "source": {
-              "cell": "38327f5f-a9ec-4548-bd69-767c27c1bfcd"
-            },
-            "target": {
               "cell": "532e7dd8-ccb2-415b-b9c7-943b4e0ace6d"
             },
-            "labels": [
-              "Encryption +Signing Code"
-            ]
+            "target": {
+              "cell": "596c7152-f472-4a03-a001-e366e2b48704"
+            }
           },
           {
             "shape": "flow",
@@ -1380,7 +1339,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Encryption Code",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1391,21 +1350,18 @@
               "protocol": "",
               "threats": []
             },
-            "id": "cfec9e8b-97fb-438b-9319-f92b3c2b8bf7",
+            "id": "03b227d6-f402-4f82-91db-635dd4ed1892",
             "source": {
-              "cell": "38327f5f-a9ec-4548-bd69-767c27c1bfcd"
+              "cell": "fff3c37f-32a6-4041-8451-34771ab6369c"
             },
             "target": {
-              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
-            },
-            "labels": [
-              "Encryption Code"
-            ]
+              "cell": "596c7152-f472-4a03-a001-e366e2b48704"
+            }
           },
           {
             "position": {
-              "x": 268,
-              "y": -225.0000000000001
+              "x": 215,
+              "y": -186.99999999999994
             },
             "size": {
               "width": 120,
@@ -1527,8 +1483,8 @@
           },
           {
             "position": {
-              "x": 160,
-              "y": 106.99999999999983
+              "x": 107,
+              "y": 144.99999999999997
             },
             "size": {
               "width": 160,
@@ -1564,8 +1520,8 @@
           },
           {
             "position": {
-              "x": 370,
-              "y": -327.0000000000001
+              "x": 317,
+              "y": -288.99999999999994
             },
             "size": {
               "width": 60,
@@ -1615,8 +1571,8 @@
           },
           {
             "position": {
-              "x": 95,
-              "y": -225.00000000000017
+              "x": 42,
+              "y": -187.00000000000006
             },
             "size": {
               "width": 60,
@@ -1652,8 +1608,8 @@
           },
           {
             "position": {
-              "x": 120,
-              "y": -387.0000000000001
+              "x": 67,
+              "y": -348.99999999999994
             },
             "size": {
               "width": 60,
@@ -1689,42 +1645,35 @@
           },
           {
             "position": {
-              "x": 699,
-              "y": -502
+              "x": 181,
+              "y": -562
             },
             "size": {
-              "width": 120,
+              "width": 112.5,
               "height": 60
             },
             "attrs": {
               "text": {
-                "text": "Encryption Libs"
+                "text": "Management"
               },
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
+              "body": {
+                "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
-            "shape": "store",
-            "id": "38327f5f-a9ec-4548-bd69-767c27c1bfcd",
-            "zIndex": 18,
+            "shape": "actor",
+            "id": "596c7152-f472-4a03-a001-e366e2b48704",
+            "zIndex": 19,
             "data": {
-              "type": "tm.Store",
-              "name": "Encryption Libs",
+              "type": "tm.Actor",
+              "name": "Management",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "providesAuthentication": false,
               "threats": []
             }
           }
