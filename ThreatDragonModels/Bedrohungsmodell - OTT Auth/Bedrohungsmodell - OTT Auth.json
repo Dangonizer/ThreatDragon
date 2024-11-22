@@ -147,7 +147,21 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "a9fe68aa-dd47-40fb-8623-f8744a542fde",
+                  "title": "Unprotected Key",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Statischer key liegt unencrypted on disk. wer zugriff auf den speicher erhalt kann otp erhalten\nCAPEC 560: Use of Known Domain Credentials\nAn adversary guesses or obtains (i.e. steals or purchases) legitimate credentials (e.g. userID/password) to achieve authentication and to perform authorized actions under the guise of an authenticated user or service. \nT1552 Unsecured Credentials\nD: 9 R: 6 E: 4 A: 8 Total: 7",
+                  "mitigation": "Rotation of key instead of using static keys.\nMITRE D3-CRO\n\nD: 9 R: 2 E: 2 A: 8 Total 5",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 109,
+                  "score": ""
+                }
+              ],
               "hasOpenThreats": false,
               "isBidirectional": false,
               "protocol": "",
@@ -243,7 +257,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "handlesCardPayment": null,
-              "handlesGoodsOrServices": null
+              "handlesGoodsOrServices": null,
+              "isWebApplication": null
             }
           },
           {
@@ -862,6 +877,10 @@
               "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
             },
             "vertices": [
+              {
+                "x": 351.5,
+                "y": -120
+              },
               {
                 "x": 383.5,
                 "y": -80
@@ -1946,7 +1965,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 108
+    "threatTop": 109
   },
   "version": "2.1.1"
 }
